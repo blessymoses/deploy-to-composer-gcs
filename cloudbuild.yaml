@@ -1,0 +1,7 @@
+steps:
+- name: gcr.io/cloud-builders/git
+  args: ['clone', 'https://github.com/blessymoses/airflow-sample-dags.git']
+artifacts:
+  objects:
+    location: 'gs://us-central1-composer-poc-en-182c61b0-bucket/dags/'
+    paths: ['sample_dag_from_github.py']
